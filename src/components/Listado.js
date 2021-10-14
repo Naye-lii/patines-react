@@ -8,7 +8,7 @@ function Listado() {
 
     const getProductsData = async function () {
         try {
-            let response = await fetch('https://patines-react.herokuapp.com/apiProducts');
+            let response = await fetch('https://e-commerce-sprint-2-patines-12.herokuapp.com/apiProducts');
             let data = await response.json();
             setProducts(data.data);
             setCount(data.total)

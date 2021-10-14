@@ -13,7 +13,7 @@ function Detalle() {
 
     const getProductsDetail = async function () {
         try {
-            let response = await fetch('https://patines-react.herokuapp.com/apiProducts/ultimo');
+            let response = await fetch('https://e-commerce-sprint-2-patines-12.herokuapp.com/apiProducts/ultimo');
             let data = await response.json();
             setDetail(data.data);
             setCatalogo(data.catalogo);

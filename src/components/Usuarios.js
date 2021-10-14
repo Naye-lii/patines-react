@@ -8,7 +8,7 @@ function Usuarios() {
 
     const getProductsData = async function () {
         try {
-            let response = await fetch('http://localhost:3001/apiUsers');
+            let response = await fetch('https://patines-react.herokuapp.com/apiUsers');
             let data = await response.json();
             setUsers(data.data);
             setCount(data.total)

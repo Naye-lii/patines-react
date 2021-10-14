@@ -7,7 +7,7 @@ function Categorias() {
 
     const getProductsData = async function () {
         try {
-            let response = await fetch('http://localhost:3001/apiProducts');
+            let response = await fetch('https://patines-react.herokuapp.com/apiProducts');
             let data = await response.json();
             setProducts(data.countByCategory);
         } catch (error) {

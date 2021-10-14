@@ -32,7 +32,7 @@ function Detalle() {
 
     return (
         <div className = "contDetalle">
-            <h1>Descripcion</h1>
+            <h1>Descripción</h1>
             {!productsCatalogo ? (
                     <p>Cargando...</p>
                 ) :
